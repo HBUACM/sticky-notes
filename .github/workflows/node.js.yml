@@ -29,4 +29,7 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: cp sticky.json dist/
+    - run: ls dist
+    - run: git add -A
+    - run: git commit -m "migrating sticky.json"
     - run: git subtree push --prefix dist origin gh-pages
