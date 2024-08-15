@@ -1,0 +1,91 @@
+<!-- App.vue -->
+<template>
+  <div class="container mx-auto p-4">
+    <h1 class="text-4xl font-bold mb-8 text-center">My Sticky Wall</h1>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+      <div 
+        v-for="note in notes" 
+        :key="note.id" 
+        class="sticky-note p-4 rounded shadow-lg transform transition-all duration-200 hover:scale-105"
+        :style="{ backgroundColor: getRandomColor(), transform: `rotate(${getRandomRotation()}deg)` }"
+      >
+        <h2 class="text-xl font-semibold mb-2">{{ note.title }}</h2>
+        <p>{{ note.content }}</p>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+import { ref, onMounted } from 'vue'
+
+export default {
+  name: 'App',
+  setup() {
+    const notes = ref([])
+
+    const fetchNotes = async () => {
+      try {
+        const response = await fetch('/sticky.json')
+        const data = await response.json()
+        notes.value = data
+      } catch (error) {
+        console.error('Error fetching notes:', error)
+      }
+    }
+
+    const getRandomColor = () => {
+      const colors = [
+        '#ffe6e6', '#e6ffe6', '#e6e6ff', '#fff2e6', '#e6fff2', '#ffe6f2',
+        '#f2e6ff', '#fffde6', '#e6f2ff', '#ffe6e6'
+      ]
+      return colors[Math.floor(Math.random() * colors.length)]
+    }
+
+    const getRandomRotation = () => {
+      return Math.random() * 6 - 3 // Random rotation between -3 and 3 degrees
+    }
+
+    onMounted(fetchNotes)
+
+    return {
+      notes,
+      getRandomColor,
+      getRandomRotation
+    }
+  }
+}
+</script>
+
+<style scoped>
+.sticky-note {
+  min-height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+
+.sticky-note::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: 
+    linear-gradient(45deg, transparent 49%, rgba(255,255,255,0.2) 50%, transparent 51%),
+    linear-gradient(-45deg, transparent 49%, rgba(255,255,255,0.2) 50%, transparent 51%);
+  background-size: 8px 8px;
+  pointer-events: none;
+}
+
+.sticky-note::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: 60px;
+  height: 10px;
+  background-color: rgba(0,0,0,0.1);
+  box-shadow: 0 0 3px rgba(0,0,0,0.1);
+}
+</style>
