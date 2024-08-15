@@ -29,4 +29,5 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: cp sticky.json dist/
+    - run: ls
     - run: git subtree push --prefix dist origin gh-pages
