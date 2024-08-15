@@ -31,7 +31,7 @@ export default {
 
     const fetchNotes = async () => {
       try {
-        const response = await fetch('/sticky.json')
+        const response = await fetch('/sticky-notes/sticky.json')
         const data = await response.json()
         notes.value = data.map(note => ({
           ...note,
