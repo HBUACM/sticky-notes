@@ -1,67 +1,32 @@
 [
     {
         "id": 1,
-        "title": "Meeting Notes",
-        "content": "# Agenda\n\n- Discuss project timeline\n- Review milestones\n- Assign tasks"
+        "title": "王旭",
+        "content": "大学四年过得很快，要珍惜时光，对于要保研的同学，要在稳住自己的绩点排名，同时充实自己的竞赛和科研经历，这样才能在夏令营和预推免中去缩小和名校学生的差距。对于参加算法竞赛的同学，要多刷题，刷有思维的题，例如Codeforces，Atcoder等，虽然是英文题面，但油猴上有脚本Codeforces Better,Atcoder Better，能够翻译英文题面，这样就没有阅读障碍了。"
     },
     {
         "id": 2,
-        "title": "Shopping List",
-        "content": "- Milk\n- Eggs\n- Bread\n- Fruits"
+        "title": "马钰鹏",
+        "content": "静下心来，不要被周围浮躁的环境所影响，按部就班地实现自己的目标。在保研方面，应当多尝试参加夏令营和预推免，可以通过研控网等平台寻找导师的评价，尽早行动以获取更多的机会。我是去年八月份联系上我现在的研究生导师的，但他今年的名额在六月份就已被其他学生开始预定了，好的导师总是非常抢手的。最后，我祝愿每位学弟学妹都能顺利实现自己的目标。"
     },
     {
         "id": 3,
-        "title": "Code Snippet",
-        "content": "Here's a simple Python function:\n\n```python\ndef greet(name):\n    return f'Hello, {name}!'\n```"
+        "title": "林锦东",
+        "content": "我一直告诉自己：“不要觉得自己的天赋不如别人，就想着努力还有什么意义。有的人天赋真的很高，他们随随便便踏出一步就比你踏出好几步来的远，但是你也没有必要跟那些天赋高的硬比，只要你找对方向，努力了，哪怕只是让自己跟天赋高的人之间的差距拉开的更慢也是有意义的，当然，也可能是超越。”现在，我把这句话送给大家。我一直相信勤能补拙，多付出一点努力，就总会有收获胜利果实的时候，也有位努力的人曾经告诉我：“那段努力却又没有收获的日子叫做扎根。”"
     },
     {
         "id": 3,
-        "title": "Code Snippet",
-        "content": "Here's a simple Python function:\n\n```python\ndef greet(name):\n    return f'Hello, {name}!'\n```"
+        "title": "华政豪",
+        "content": "算法的旅程既充满挑战也满载机遇。在这里，每一次的代码调试、每一次的算法优化，都是你们智慧的火花，也是成长的脚步。保持好奇心，勇于探索未知，用你们的智慧和热情去解锁算法的奥秘。未来的道路上，愿你们不断前行，不仅成为技术的驾驭者，更是创新的引领者。加油，你们的未来无限光明！"
     },
     {
         "id": 3,
-        "title": "Code Snippet",
-        "content": "Here's a simple Python function:\n\n```python\ndef greet(name):\n    return f'Hello, {name}!'\n```"
+        "title": "韩墨霖",
+        "content": "计算机科学是一个日新月异的领域，新技术、新框架层出不穷，在学习的过程中一定要保持学习的的热情和动力，学习新技术，不断提升自己的竞争力。程序不能只局限于看懂，在掌握理论知识的同时，更要注重实践应用。通过参与项目、解决实际问题来巩固所学知识，提升自己的编程能力。\n        其次，在编程过程中，遇到问题是常态，我们可以利用各种方法去找到我们想要解决的问题的答案，但是更重要的是要学会如何分析问题，运用所学知识去给出合理的解决方案，尝试从不同角度思考，逐步培养自己的问题解决能力，在成功解决问题之后也要善于总结，不断提升自己的专业能力和综合素质。 \n    在学习的过程中，我们也可以找到自己的学习搭子，及时分享自己了解信息和进展，学会与他人有效沟通、协作完成任务，可以很好的敦促我们完成自己的学习目标，相互鼓励，共同进步。 最后，要关注自己的职业规划，明确自己的职业目标和发展方向，制定切实可行的计划并付诸实践。"
     },
     {
         "id": 3,
-        "title": "Code Snippet",
-        "content": "Here's a simple Python function:\n\n```python\ndef greet(name):\n    return f'Hello, {name}!'\n```"
-    },
-    {
-        "id": 3,
-        "title": "color",
-        "content": "<font color=red>aaaaaa</font>"
-    },
-    {
-        "id": 3,
-        "title": "checkbox",
-        "content": " - [ ] 123\n - [x] 456"
-    },
-    {
-        "id": 3,
-        "title": "math",
-        "content": "$1=\\frac{1}{2}$"
-    },
-    {
-        "id": 3,
-        "title": "code block",
-        "content": "`abc`"
-    },
-    {
-        "id": 3,
-        "title": "table",
-        "content": "|a|b|c|\n|-----|-----|-----|\n|1|2|3|"
-    },
-    {
-        "id": 3,
-        "title": "Code Snippet",
-        "content": "Here's a simple Python function:\n\n```python\ndef greet(name):\n    return f'Hello, {name}!'\n```"
-    },
-    {
-        "id": 3,
-        "title": "test image",
-        "content": "![aaa](https://avatars.githubusercontent.com/u/103596639?s=48&v=4)"
+        "title": "葛政骅",
+        "content": "多和他人交流并互相学习。算法题大多没有唯一解，每个人的解法或多或少都会存在差异。研究别人的代码，有助于帮自己拓宽视野，打破自己的思路桎梏。"
     }
 ]
